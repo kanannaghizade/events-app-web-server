@@ -1,4 +1,4 @@
-# Use Official NodeJS base image
+# Use Official NodeJS base image 
 FROM node:18-alpine
 # Copy application code.
 COPY . /app/
@@ -6,5 +6,5 @@ COPY . /app/
 WORKDIR /app
 # Install dependencies.
 RUN npm install --omit=dev
-# Start the Express app
+# Start the Express app 
 CMD ["node", "./src/server.js"]
